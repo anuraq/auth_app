@@ -1,8 +1,10 @@
 <template>
     <header class="header">
-        <span>
-            <h1>Auth App</h1>
-        </span>
+        <router-link to="/">
+            <span>
+                <h1>Auth App</h1>
+            </span>
+        </router-link>
     </header>
 </template>
 
@@ -25,5 +27,9 @@ export default {
     span:hover {
         color: black;
         cursor: pointer;
+    }
+    a {
+        text-decoration: none;
+        color: white;
     }
 </style>

@@ -35,6 +35,7 @@ body{
   width: 100vw;
   display: flex;
   flex-direction: column;
+  background-color: rgb(225, 227, 241);
 }
 .view-con {
   flex-grow: 1;

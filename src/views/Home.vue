@@ -39,6 +39,7 @@
     border-radius: 10px;
     box-sizing: content-box;
     padding: 10px;
+    background-color: white;
     border: 3px solid black;
 }
 .btn-con:hover {
@@ -47,6 +48,7 @@
     cursor: pointer;
 }
 a {
+    color:#6E4A90;
     text-decoration: none;
 }
 </style>

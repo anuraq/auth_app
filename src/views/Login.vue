@@ -1,8 +1,9 @@
 <template>
   <div class="container">
+    <span>Already a User</span>
     <input placeholder="Username / Email" type="text">
     <input placeholder="Password" type="text">
-    <div class="auth-btn">LOGIN</div>
+    <div class="auth-btn" v-on:click="testLogin">LOGIN</div>
   </div>
 </template>
 
@@ -10,8 +11,11 @@
 
 export default {
   name: 'Login',
-  components: {
-  }
+  methods: {
+    testLogin: function() {
+      alert("LOGIN");
+    }
+  },
 }
 </script>
 
@@ -27,7 +31,7 @@ input {
   margin-top: 30px;
   height: 3rem;
   border-radius: 40px;
-  width: 400px;
+  max-width: 400px;
   box-sizing: border-box;
   text-align: center;
   font-size: 1.7rem;
@@ -50,5 +54,8 @@ input:focus {
   color: black;
   box-shadow: 5px 10px #888888;
   cursor: pointer;
+}
+span {
+  font-size: 2.5rem;
 }
 </style>
